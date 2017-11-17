@@ -30,3 +30,9 @@ fi
 [ -s "/Users/jok/.dnx/dnvm/dnvm.sh" ] && . "/Users/jok/.dnx/dnvm/dnvm.sh" # Load dnvm
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Add Visual Studio Code (code)
+export PATH="/Users/johanobrink/.nvm/versions/node/v9.2.0/bin:/usr/local/share/npm/bin:/usr/local/sbin:/Users/johanobrink/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jok/Library/Android/sdk/tools:/Users/jok/Library/Android/sdk/platform-tools:/usr/local/connectiq:/Users/jok/.nvm/v0.10.36/bin:/usr/local/share/npm/bin:/usr/local/sbin:/Users/jok/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
