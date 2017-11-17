@@ -5,7 +5,7 @@ alias o="open ."  # OS X, open in Finder
 alias t='touch'
 
 # Management
-alias dots="mvim ~/.dotfiles"
+alias dots="code ~/.dotfiles"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias redot='cd ~/.dotfiles && gpp && rake install; cd -'
 
@@ -71,3 +71,28 @@ alias http="python -m SimpleHTTPServer 8080"
 
 # Hub (http://defunkt.io/hub/)
 alias git=hub
+
+# Docker
+alias d="docker"
+alias dl="docker login"
+alias dps="docker ps"
+alias ds="docker stop"
+alias dsa="docker stop \$(docker ps -a -q)"
+alias drm="docker rm"
+alias drma="docker rm \$(docker ps -a -q)"
+alias drmia="docker rmi \$(docker images -q)"
+# Docker Compose
+alias dc="docker-compose"
+alias dcb="docker-compose build"
+alias dcu="docker-compose up"
+# Docker Cloud
+alias dcl="docker-cloud"
+# sut
+alias sut-cache="docker run --name builder_cache --entrypoint /bin/true tutum/builder"
+alias sut="sut-cache; docker run --rm -it --privileged --volumes-from builder_cache -v \$HOME/.docker:/.docker:ro -v \$(pwd):/app tutum/builder"
+
+#React Native
+alias rn="react-native"
+
+#Node projects
+alias standard="echo -e \"{\n  \\\"extends\\\": \\\"standard\\\",\n\n  \\\"globals\\\": {\n    \\\"after\\\": true,\n    \\\"before\\\": true,\n    \\\"afterEach\\\": true,\n    \\\"beforeEach\\\": true,\n    \\\"describe\\\": true,\n    \\\"it\\\": true\n  },\n\n  \\\"rules\\\": {\n    \\\"arrow-parens\\\": 0,\n    \\\"no-unexpected-multiline\\\": 2,\n    \\\"no-var\\\": 2,\n    \\\"prefer-const\\\": 2\n  }\n}\" > .eslintrc && npm i -D gulp gulp-eslint gulp-mocha mocha chai sinon sinon-chai eslint eslint-plugin-promise eslint-config-standard eslint-plugin-standard eslint-plugin-node eslint-plugin-import proxyquire"
