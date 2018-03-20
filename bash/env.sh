@@ -1,2 +1,2 @@
-export EDITOR='mvim -f'
-. /Users/jok/.nvm/nvm.sh
+export EDITOR='mvim -v -f'
+. ~/.nvm/nvm.sh
