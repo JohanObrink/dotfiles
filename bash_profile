@@ -5,6 +5,7 @@ source ~/.dotfiles/bash/env.sh
 source ~/.dotfiles/bash/prompt.sh
 source ~/.dotfiles/bash/aliases.sh
 source ~/.dotfiles/bash/functions.sh
+source ~/.dotfiles/bash/npm.sh
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
